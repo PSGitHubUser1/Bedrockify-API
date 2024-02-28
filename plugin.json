@@ -1,11 +1,11 @@
 {
-  "id": "cct_api",
-  "weight": 1090,
+  "id": "bedrockify_api",
+  "weight": 31,
   "minversion": 202300451120,
   "info": {
-    "name": "CCT API",
-    "version": "1.0",
-    "description": "Adds CC: Tweaked mod to your worksapce.",
+    "name": "Bedrockify API",
+    "version": "1.1",
+    "description": "Implements Bedrockify mod in MCreator",
     "author": "Infoy"
   }
 }

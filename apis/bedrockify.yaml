@@ -1,0 +1,18 @@
+---
+fabric-1.20.1:
+  gradle: |
+    repositories {
+     
+                maven {
+                    name = "Modrinth"
+                    url = "https://api.modrinth.com/maven"
+                }
+    }
+    
+    dependencies {
+      modImplementation "maven.modrinth:ox3rDp1B:46zHRXRL" //1.9.1
+    
+    }
+  update_files:
+    - ~
+name: "Bedrockify API (Fabric)" 
