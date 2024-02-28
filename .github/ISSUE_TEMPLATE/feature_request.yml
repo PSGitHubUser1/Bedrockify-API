@@ -1,5 +1,5 @@
 name: Feature Request
-description: Create a report to help us improve (search for duplicates first)
+description: Create a report to help us improve.
 labels: featreq
 body:
  - type: checkboxes
