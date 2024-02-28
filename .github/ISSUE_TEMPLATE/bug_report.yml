@@ -1,12 +1,12 @@
 name: Bug report
-description: Create a report to help us improve (search for duplicates first)
+description: Create a report to help us improve.
 labels: bug
 body:
  - type: checkboxes
    attributes:
-    label: Issue tracker rule checks (please read carefully)
+    label: Issue tracker rule checks
     options:
-     - label: "I have checked that my problem <a href='https://github.com/PSGitHubUser1/Creators-Essentials/issues' target='_blank'>is not already reported</a>"
+     - label: "I have checked that my problem <a href='https://github.com/PSGitHubUser1/CC-Tweaked/issues' target='_blank'>is not already reported</a>"
        required: true
      - label: "I have checked that my problem is not already fixed"
        required: true
@@ -46,8 +46,7 @@ body:
     placeholder: |
       MCreator version (*): [2023.4 ...]
       Generator type (*): [fabric-1.20.1 / ...]
-      Fabric Generator version (*): [fabric-1.8.1 / fabric-1.8.2 / ...]
-      CE version: [fabric-1.6.2 / fabric-1.6.3 / ...]
+      CC-Tweaked version: [fabric-1.6.2 / fabric-1.6.3 / ...]
       
    validations:
      required: true
