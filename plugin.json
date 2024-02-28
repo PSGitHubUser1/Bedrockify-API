@@ -1,12 +1,11 @@
 {
-  "id": "creatorsessentials",
-  "weight": 30,
-  "minversion": 0,
+  "id": "cct_api",
+  "weight": 1090,
+  "minversion": 202300451120,
   "info": {
-    "name": "Creator's Essentials",
+    "name": "CCT API",
     "version": "1.0",
-    "description": "A plugin for users of MCreator (Fabric)",
-    "author": "Infoy or PSGitHubUser1",
-    "credits": "Made with MCreator plugin builder by NerdyPuzzle"
+    "description": "Adds CC: Tweaked mod to your worksapce.",
+    "author": "Infoy"
   }
 }

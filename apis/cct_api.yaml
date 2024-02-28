@@ -1,0 +1,74 @@
+---
+fabric-1.20.1:
+  gradle: |
+    repositories {
+       maven {
+          url "https://squiddev.cc/maven/"
+       content {
+       includeGroup("cc.tweaked")
+           }
+       }
+    }
+    
+    dependencies {
+        modCompileOnly "cc.tweaked:cc-tweaked-1.20.1-fabric-api:1.109.6"
+        modRuntimeOnly "cc.tweaked:cc-tweaked-1.20.1-fabric:1.109.6"
+    }
+  update_files:
+    - ~
+
+forge-1.20.1:
+  gradle: |
+    repositories {
+       maven {
+          url "https://squiddev.cc/maven/"
+       content {
+       includeGroup("cc.tweaked")
+           }
+       }
+    }
+    
+    dependencies {
+        compileOnly("cc.tweaked:cc-tweaked-1.20.1-core-api:1.109.6")
+        compileOnly(fg.deobf("cc.tweaked:cc-tweaked-1.20.1-forge-api:1.109.6"))
+        runtimeOnly(fg.deobf("cc.tweaked:cc-tweaked-1.20.1-forge:1.109.6"))
+    }
+    minecraft {
+    runs {
+        configureEach {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+        }
+    }
+    
+  update_files:
+    - ~
+
+forge-1.19.4:
+  gradle: |
+    repositories {
+       maven {
+          url "https://squiddev.cc/maven/"
+       content {
+       includeGroup("cc.tweaked")
+           }
+       }
+    }
+    
+    dependencies {
+        compileOnly("cc.tweaked:cc-tweaked-1.19.4-core-api:1.108.0")
+        compileOnly(fg.deobf("cc.tweaked:cc-tweaked-1.19.4-forge-api:1.108.0"))
+        runtimeOnly(fg.deobf("cc.tweaked:cc-tweaked-1.19.4-forge:1.108.0"))
+    }
+    minecraft {
+    runs {
+        configureEach {
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${buildDir}/createSrgToMcp/output.srg"
+        }
+    }
+    
+  update_files:
+    - ~
+    
+name: "CC: Tweaked API"
